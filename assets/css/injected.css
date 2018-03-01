@@ -1,0 +1,31 @@
+.quantifier
+{
+	width: 80px;
+	height: 100%;
+	float: right;
+	text-align: center;
+	padding: 1px 10px 0px 10px;
+}
+	.quantifier.active
+	{
+		background-image: -webkit-linear-gradient(top, #7FA453, #587238);
+	}
+
+	.quantifier input
+	{
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 3px;
+		text-align: center;
+	}
+
+	.quantifier .item_market_action_button_green
+	{
+		margin: 0px 3px;
+	}
+
+		.quantifier .item_market_action_button_green .item_market_action_button_contents
+		{
+			min-width: 20px;
+		}

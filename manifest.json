@@ -1,0 +1,52 @@
+{
+    "manifest_version": 2,
+
+    "name": "Steamroller",
+    "description": "Steam aquisition aid.",
+    "version": "1.0",
+
+    "permissions": [
+        "*://steamcommunity.com/market/",
+        "http://stagex.cvds.ro/",
+        "tabs",
+        "notifications"
+    ],
+
+    "background": {
+        "scripts": [
+            "assets/js/jquery.js",
+            "assets/js/utils.js",
+            "assets/js/background.js"
+        ]
+    },
+
+    "icons": {
+        "128" : "assets/img/icon.png"
+    },
+
+    "browser_action": {
+        "default_icon": "assets/img/icon.png",
+        "default_popup": "popup.html"
+    },
+
+
+    "content_scripts" : [{
+        "matches": [
+        "http://steamcommunity.com/market/",
+        "http://steamcommunity.com/market/search*"
+        ],
+
+        "js": [
+        "assets/js/jquery.js",
+        "assets/js/injected.js"
+        ],
+
+        "css": ["assets/css/injected.css"],
+
+        "run_at": "document_end"
+    }],
+
+    "web_accessible_resources": [
+        "assets/img/icon.png"
+    ]
+}

@@ -1,0 +1,101 @@
+body
+{
+    background-color: #333333;
+    width: 205px;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.section
+{
+    overflow: hidden;
+    color: #828282;
+}
+
+    .section .sectionTitle
+    {
+        color: #828282;
+        border-bottom: 1px solid #828282;
+        margin-bottom: 5px;
+        padding-bottom: 2px;
+    }
+
+        .sectionTitle  a
+        {
+            float: right;
+            color: #587238;
+            text-decoration: none;
+        }
+
+        .sectionTitle  a:hover
+        {
+            color: #7FA453;
+        }
+
+        .sectionTitle a:focus
+        {
+            outline: none;
+        }
+
+    .section .emptyMessage
+    {
+        text-align: center;
+    }
+
+    .section .item
+    {
+        width: 62px;
+        height: 62px;
+        background-color: #3C352E;
+        border: 1px solid #7D6D00;
+        float: left;
+        position: relative;
+        margin: 0px 2px 5px;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .section .item.active
+    {
+        border-color: white;
+    }
+
+        .item .info
+        {
+            position: absolute;
+            color: white;
+            background-color: #7FA453;
+            padding: 0px 3px;
+        }
+
+        .item .info.quantity
+        {
+            bottom: 0px;
+            border-top-right-radius: 5px;
+        }
+
+        .item .info.price
+        {
+            bottom: 0px;
+            right: 0px;
+            border-top-left-radius: 5px;
+        }
+
+#editSection
+{
+    display: none;
+    margin-top: 20px;
+}
+
+    #editSection #editForm
+    {
+        float: right;
+        width: 120px;
+    }
+
+        #editForm #confirmBtn
+        {
+            display: none;
+        }
+
